@@ -107,7 +107,9 @@ export default function Index() {
                 </DropdownMenuContent>
               </DropdownMenu>
 
-              <span className="text-sm text-muted-foreground">Support</span>
+              <Link to="/support" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                Support
+              </Link>
             </div>
           </div>
         </header>
