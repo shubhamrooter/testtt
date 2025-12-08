@@ -6,7 +6,15 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { ChevronDown, Shield, Target, Zap, Eye, BarChart3, Bug } from "lucide-react";
+import {
+  ChevronDown,
+  Shield,
+  Target,
+  Zap,
+  Eye,
+  BarChart3,
+  Bug,
+} from "lucide-react";
 import { useState } from "react";
 
 export default function Index() {
@@ -109,7 +117,9 @@ export default function Index() {
           <div className="text-center mb-12 sm:mb-16">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/5 mb-6 sm:mb-8">
               <span className="w-2 h-2 rounded-full bg-blue-400"></span>
-              <span className="text-xs sm:text-sm text-blue-300 font-medium">COMING SOON</span>
+              <span className="text-xs sm:text-sm text-blue-300 font-medium">
+                COMING SOON
+              </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
@@ -118,19 +128,23 @@ export default function Index() {
                 Future
               </span>
               <br />
-              of <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              of{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 Zero-Day
               </span>{" "}
               Detection
             </h1>
 
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-8 sm:mb-10">
-              Unlock the power of AI to identify zero-day vulnerabilities with ease.
-              Stay ahead of cyber threats with our cutting-edge platform.
+              Unlock the power of AI to identify zero-day vulnerabilities with
+              ease. Stay ahead of cyber threats with our cutting-edge platform.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-6 sm:mb-8">
-              <form onSubmit={handleSubscribe} className="flex w-full sm:w-auto gap-2">
+              <form
+                onSubmit={handleSubscribe}
+                className="flex w-full sm:w-auto gap-2"
+              >
                 <Input
                   type="email"
                   placeholder="Enter your email"
@@ -176,7 +190,9 @@ export default function Index() {
           <div className="text-center mb-12 sm:mb-16">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/5 mb-4 sm:mb-6">
               <Zap className="w-4 h-4 text-blue-400" />
-              <span className="text-xs sm:text-sm text-blue-300 font-medium">Features</span>
+              <span className="text-xs sm:text-sm text-blue-300 font-medium">
+                Features
+              </span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
@@ -184,7 +200,8 @@ export default function Index() {
             </h2>
 
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Discover how our comprehensive suite of tools can transform your security testing workflow.
+              Discover how our comprehensive suite of tools can transform your
+              security testing workflow.
             </p>
           </div>
 
@@ -228,7 +245,8 @@ export default function Index() {
               </h2>
 
               <p className="text-muted-foreground max-w-2xl mx-auto mb-8 sm:mb-10">
-                Join the waitlist now and be among the first to test our AI-powered platform.
+                Join the waitlist now and be among the first to test our
+                AI-powered platform.
               </p>
 
               <Button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-6 rounded-lg text-base font-semibold">
