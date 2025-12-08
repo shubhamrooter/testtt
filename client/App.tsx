@@ -10,7 +10,12 @@ import Index from "./pages/Index";
 import Support from "./pages/Support";
 import NotFound from "./pages/NotFound";
 
-const queryClient = new QueryClient();
+// Create or reuse QueryClient to prevent recreating it on HMR
+let queryClient: any = (window as any).__queryClient;
+if (!queryClient) {
+  queryClient = new QueryClient();
+  (window as any).__queryClient = queryClient;
+}
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
