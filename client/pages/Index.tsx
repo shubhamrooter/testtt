@@ -51,7 +51,9 @@ export default function Index() {
         setError(data.message || "An error occurred. Please try again.");
       }
     } catch (err) {
-      setError("Failed to subscribe. Please check your connection and try again.");
+      setError(
+        "Failed to subscribe. Please check your connection and try again.",
+      );
       console.error("Subscription error:", err);
     } finally {
       setIsLoading(false);
@@ -135,7 +137,10 @@ export default function Index() {
                 </DropdownMenuContent>
               </DropdownMenu>
 
-              <Link to="/support" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <Link
+                to="/support"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Support
               </Link>
             </div>
@@ -193,11 +198,7 @@ export default function Index() {
               </form>
             </div>
 
-            {error && (
-              <p className="text-sm text-red-400 mb-4">
-                {error}
-              </p>
-            )}
+            {error && <p className="text-sm text-red-400 mb-4">{error}</p>}
 
             {isSubscribed && (
               <p className="text-sm text-green-400 mb-4">

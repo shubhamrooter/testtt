@@ -20,7 +20,9 @@ function getEmailTransporter() {
   const emailPassword = process.env.EMAIL_PASSWORD;
 
   if (!emailUser || !emailPassword) {
-    console.warn("Email credentials not configured. Subscription emails will not be sent.");
+    console.warn(
+      "Email credentials not configured. Subscription emails will not be sent.",
+    );
     return null;
   }
 

@@ -87,7 +87,10 @@ export default function Support() {
         {/* Header */}
         <header className="border-b border-border/50 backdrop-blur-md sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <Link
+              to="/"
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            >
               <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">X</span>
               </div>
@@ -111,7 +114,10 @@ export default function Support() {
                 </DropdownMenuContent>
               </DropdownMenu>
 
-              <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <Link
+                to="/"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Home
               </Link>
             </div>
@@ -126,7 +132,8 @@ export default function Support() {
             </h1>
 
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-8 sm:mb-10">
-              Find answers, tutorials, and support resources to get the most out of XploitArean.
+              Find answers, tutorials, and support resources to get the most out
+              of XploitArean.
             </p>
 
             <div className="flex w-full max-w-2xl mx-auto mb-4">
