@@ -12,7 +12,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { ChevronDown, Mail, MessageSquare, Zap, Book, AlertCircle, Clock } from "lucide-react";
+import { ChevronDown, Mail, Zap, Book, AlertCircle, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
