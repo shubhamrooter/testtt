@@ -40,6 +40,7 @@ sudo apt install -y nodejs
 ```
 
 Verify installation:
+
 ```bash
 node --version
 npm --version
@@ -52,6 +53,7 @@ npm install -g pnpm@latest
 ```
 
 Verify installation:
+
 ```bash
 pnpm --version
 ```
@@ -63,6 +65,7 @@ sudo apt install -y git
 ```
 
 Verify installation:
+
 ```bash
 git --version
 ```
@@ -92,6 +95,7 @@ pnpm install
 ```
 
 This will install all required packages including:
+
 - React, React Router, Vite
 - Express (backend)
 - Tailwind CSS
@@ -135,10 +139,11 @@ PING_MESSAGE=Server is running
 **Important**: If using Outlook/Microsoft 365, you MUST use an **App Password**, not your regular password.
 
 To generate an App Password:
+
 1. Go to https://account.microsoft.com/security
 2. Sign in with your `connect@xploitarean.ai` account
 3. Enable "Two-step verification" (if not already enabled)
-4. In "App passwords" section, select "Mail" and "Windows" 
+4. In "App passwords" section, select "Mail" and "Windows"
 5. Click "Create" and copy the generated password
 6. Paste this password in the `.env` file for `EMAIL_PASSWORD`
 
@@ -165,6 +170,7 @@ pnpm dev
 The application will start on `http://localhost:5173`
 
 To access from your VPS public IP:
+
 ```
 http://your_vps_ip:5173
 ```
@@ -182,6 +188,7 @@ pnpm build
 ```
 
 This creates optimized production bundles in:
+
 - `dist/spa/` - Frontend files
 - `dist/server/` - Backend files
 
@@ -296,9 +303,9 @@ sudo nano /etc/nginx/sites-available/xploitarean
 server {
     listen 80;
     listen [::]:80;
-    
+
     server_name your_domain.com www.your_domain.com;
-    
+
     location / {
         proxy_pass http://localhost:3000;
         proxy_http_version 1.1;
@@ -367,8 +374,9 @@ curl http://localhost:3000/api/ping
 ```
 
 Should return:
+
 ```json
-{"message":"Server is running"}
+{ "message": "Server is running" }
 ```
 
 ---
@@ -378,6 +386,7 @@ Should return:
 ### Issue: "Address already in use"
 
 Port 3000 is already in use. Either:
+
 1. Kill the process: `sudo lsof -i :3000 | grep -v PID | awk '{print $2}' | xargs kill -9`
 2. Or change the port in your application
 
@@ -391,12 +400,14 @@ Port 3000 is already in use. Either:
 ### Issue: High CPU/Memory Usage
 
 Check running processes:
+
 ```bash
 top -b -n 1 | head -20
 pm2 monit
 ```
 
 Stop and restart application:
+
 ```bash
 pm2 stop xploitarean
 sleep 5
@@ -406,7 +417,7 @@ pm2 start xploitarean
 ### Issue: Cannot connect to application
 
 1. Check firewall: `sudo ufw status`
-2. Allow ports: 
+2. Allow ports:
    ```bash
    sudo ufw allow 80/tcp
    sudo ufw allow 443/tcp
@@ -417,6 +428,7 @@ pm2 start xploitarean
 ### Issue: Build fails
 
 Clear cache and reinstall:
+
 ```bash
 rm -rf node_modules pnpm-lock.yaml
 pnpm install
@@ -461,6 +473,7 @@ sudo systemctl status xploitarean
 ## Support
 
 For issues or questions:
+
 - Email: connect@xploitarean.ai
 - GitHub: https://github.com/shubhamrooter/testtt
 
