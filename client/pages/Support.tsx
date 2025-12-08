@@ -246,34 +246,21 @@ export default function Support() {
               </h2>
 
               <p className="text-muted-foreground max-w-2xl mx-auto text-center mb-8 sm:mb-10">
-                Our support team is here to help you. Reach out via email or chat with us.
+                Our support team is here to help you. Reach out via email.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-                <div className="flex flex-col items-center p-6 rounded-xl border border-blue-500/30 bg-blue-500/5 hover:bg-blue-500/10 transition-colors">
-                  <Mail className="w-8 h-8 text-blue-400 mb-4" />
-                  <h3 className="text-lg font-semibold mb-2">Email Support</h3>
-                  <p className="text-muted-foreground text-center mb-4 text-sm">
-                    Get help from our support team within 24 hours.
-                  </p>
-                  <a
-                    href="mailto:support@xploitarean.com"
-                    className="text-blue-400 hover:text-blue-300 transition-colors font-semibold"
-                  >
-                    support@xploitarean.com
-                  </a>
-                </div>
-
-                <div className="flex flex-col items-center p-6 rounded-xl border border-blue-500/30 bg-blue-500/5 hover:bg-blue-500/10 transition-colors">
-                  <MessageSquare className="w-8 h-8 text-blue-400 mb-4" />
-                  <h3 className="text-lg font-semibold mb-2">Live Chat</h3>
-                  <p className="text-muted-foreground text-center mb-4 text-sm">
-                    Chat with our support team in real-time.
-                  </p>
-                  <button className="text-blue-400 hover:text-blue-300 transition-colors font-semibold">
-                    Start Chat
-                  </button>
-                </div>
+              <div className="flex flex-col items-center p-6 rounded-xl border border-blue-500/30 bg-blue-500/5 hover:bg-blue-500/10 transition-colors max-w-sm mx-auto">
+                <Mail className="w-8 h-8 text-blue-400 mb-4" />
+                <h3 className="text-lg font-semibold mb-2">Email Support</h3>
+                <p className="text-muted-foreground text-center mb-4 text-sm">
+                  Get help from our support team within 24 hours.
+                </p>
+                <a
+                  href="mailto:support@xploitarean.com"
+                  className="text-blue-400 hover:text-blue-300 transition-colors font-semibold"
+                >
+                  support@xploitarean.com
+                </a>
               </div>
             </div>
           </div>
