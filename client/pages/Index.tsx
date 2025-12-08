@@ -21,13 +21,40 @@ import { useState } from "react";
 export default function Index() {
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      setIsSubscribed(true);
-      setEmail("");
-      setTimeout(() => setIsSubscribed(false), 3000);
+    setError("");
+
+    if (!email) {
+      setError("Please enter a valid email");
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setIsSubscribed(true);
+        setEmail("");
+        setTimeout(() => setIsSubscribed(false), 5000);
+      } else {
+        setError(data.message || "An error occurred. Please try again.");
+      }
+    } catch (err) {
+      setError("Failed to subscribe. Please check your connection and try again.");
+      console.error("Subscription error:", err);
+    } finally {
+      setIsLoading(false);
     }
   };
 
