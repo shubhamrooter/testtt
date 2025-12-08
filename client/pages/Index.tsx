@@ -80,7 +80,7 @@ export default function Index() {
                 <span className="text-white font-bold text-sm">X</span>
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                XpionArena
+                XploitArean
               </span>
             </div>
 
