@@ -71,30 +71,6 @@ export default function Support() {
       answer:
         "We offer 24/7 email support, comprehensive documentation, video tutorials, and personalized onboarding for enterprise customers. Our support team is dedicated to helping you get the most out of XploitArean.",
     },
-    {
-      id: "5",
-      question: "Can I integrate XploitArean with other tools?",
-      answer:
-        "Yes, XploitArean has a comprehensive REST API that allows integration with popular security tools and platforms. We also offer pre-built integrations with major SIEM and vulnerability management solutions.",
-    },
-    {
-      id: "6",
-      question: "What are your pricing plans?",
-      answer:
-        "We offer flexible pricing based on your organization's needs. Plans include Starter for small teams, Professional for growing organizations, and Enterprise for large deployments with custom requirements. Contact our sales team for detailed pricing.",
-    },
-    {
-      id: "7",
-      question: "Is there a free trial available?",
-      answer:
-        "Yes! We offer a 14-day free trial with full access to all features. No credit card required to start your trial.",
-    },
-    {
-      id: "8",
-      question: "How often do you release new features?",
-      answer:
-        "We release new features and updates monthly. Major platform updates happen quarterly with extensive testing and rollout processes to ensure stability.",
-    },
   ];
 
   return (
@@ -269,7 +245,7 @@ export default function Support() {
         {/* Footer */}
         <footer className="border-t border-border/50 backdrop-blur-md mt-20 sm:mt-32">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-muted-foreground">
-            <p>© 2024 XploitArean. All rights reserved.</p>
+            <p>© 2025 XploitArean. All rights reserved.</p>
           </div>
         </footer>
       </div>
