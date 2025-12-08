@@ -262,7 +262,7 @@ export default function Index() {
         {/* Footer */}
         <footer className="border-t border-border/50 backdrop-blur-md mt-20 sm:mt-32">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-muted-foreground">
-            <p>© 2024 XploitArean. All rights reserved.</p>
+            <p>© 2025 XploitArean. All rights reserved.</p>
           </div>
         </footer>
       </div>
