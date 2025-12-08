@@ -185,12 +185,19 @@ export default function Index() {
                 />
                 <Button
                   type="submit"
-                  className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-lg whitespace-nowrap"
+                  disabled={isLoading || isSubscribed}
+                  className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-lg whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Join the Waitlist
+                  {isLoading ? "Subscribing..." : "Join the Waitlist"}
                 </Button>
               </form>
             </div>
+
+            {error && (
+              <p className="text-sm text-red-400 mb-4">
+                {error}
+              </p>
+            )}
 
             {isSubscribed && (
               <p className="text-sm text-green-400 mb-4">
